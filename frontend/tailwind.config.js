@@ -1,7 +1,7 @@
 module.exports = {
   content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
     "./backend/templates/**/*.html",
-    "./frontend/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {

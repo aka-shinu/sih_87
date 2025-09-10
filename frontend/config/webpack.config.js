@@ -7,7 +7,7 @@ module.exports = (env, argv) => {
   return {
     mode: isProduction ? 'production' : 'development',
     entry: {
-      aiTest: './src/index.jsx',
+      root: './src/index.jsx',
     },
     output: {
       path: path.resolve(__dirname, '../../backend/static'),
@@ -16,6 +16,9 @@ module.exports = (env, argv) => {
     },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      alias: {
+        '@': path.resolve(__dirname, '../src'),
+      },
     },
     module: {
       rules: [

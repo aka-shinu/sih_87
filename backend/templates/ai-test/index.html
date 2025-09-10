@@ -3,49 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Test Dashboard - Mental Health Platform</title>
+    <title>AI prototype - Mental Health Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Ensure buttons are always visible */
-        button {
-            opacity: 1 !important;
-            visibility: visible !important;
-            display: block !important;
-        }
-        
-        /* Fix any hover-only visibility issues */
-        .tab-button {
-            opacity: 1;
-            visibility: visible;
-            display: inline-block;
-        }
-        
-        /* Ensure proper button styling */
-        .btn {
-            background-color: #3b82f6;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.375rem;
-            border: none;
-            cursor: pointer;
-            font-weight: 500;
-        }
-        
-        .btn:hover {
-            background-color: #2563eb;
-        }
-        
-        .btn-secondary {
-            background-color: #6b7280;
-        }
-        
-        .btn-secondary:hover {
-            background-color: #4b5563;
-        }
-    </style>
 </head>
-<body class="bg-gray-50">
+<body>
     <div id="root"></div>
-    <script src="{% load static %}{% static 'js/aiTest.js' %}"></script>
+    <script src="{% load static %}{% static 'js/root.js' %}"></script>
 </body>
 </html>
